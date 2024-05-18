@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract XY Coordinates from Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #image-container {
+            position: relative;
+        }
+        #image {
+            max-width: 100%;
+            max-height: 80vh;
+        }
+        .point {
+            position: absolute;
+            background-color: red;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+        #coordinates {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Extract XY Coordinates from Image</h1>
+    <input type="file" id="upload" accept="image/*">
+    <div id="image-container">
+        <img id="image" src="" alt="">
+    </div>
+    <div id="coordinates">
+        <h2>Coordinates:</h2>
+        <ul id="coord-list"></ul>
+    </div>
+    <button id="save-coordinates">Save Coordinates</button>
+    <script src="script.js"></script>
+</body>
+</html>
